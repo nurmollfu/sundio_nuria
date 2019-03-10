@@ -1,0 +1,51 @@
+// ADHOC STYLES
+//=============================================================
+
+// Header
+//-------------------------------------------------------------
+
+header
+	background: #fff url('../img/header-lines.png') repeat-x left bottom/220px
+	height: 80px
+	position: relative
+	width: 100%
+	z-index: 1
+
+.logoHeader
+	position: absolute
+	top: 30px
+	left: calc(50% - 125px)
+	width: 250px
+
+@media (min-width: $grid-breackpoint-md)
+	.logoHeader
+		left: 30px
+
+.sloganHeader
+	color: $color-primary
+	font-family: 'Fords Folly'
+	font-size: 1.5rem
+	position: absolute
+	top: 27px
+	left: 290px
+
+@media (min-width: 1090px)
+	.sloganHeader
+		font-size: 1.7rem
+
+.listLogoHeader
+	position: absolute
+	top: 15px
+	right: 15px
+
+	ul
+		li
+			display: inline-block
+			margin: 0 5px
+			width: 30px
+
+
+@media (min-width: 1090px)
+	.listLogoHeader ul
+		li
+			width: 35px

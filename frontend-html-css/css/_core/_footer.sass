@@ -1,0 +1,60 @@
+// ADHOC STYLES
+//=============================================================
+
+// Footer
+//-------------------------------------------------------------
+footer
+	background: #faeb00
+
+	&:before
+		background: url('../img/sunweb-wave.svg') no-repeat center/cover
+		content: ''
+		display: block
+		height: 50px
+		left: 0
+		position: absolute
+		top: 0
+		width: 100%
+
+	.w-25,
+	.w-33,
+	.w-66,
+	.w-75
+		display: inline-block
+		margin: 0 0 20px
+		width: 100%
+
+	ul li
+		color: #2d2d2d
+		list-style: none
+		margin-bottom: 7px
+
+	h3
+		color: #2d2d2d
+		font-family: 'Sansa Pro Bold'
+		margin-bottom: 10px
+
+
+
+@media (min-width: $grid-breackpoint-md)
+	footer
+		.w-25,
+			width: 25%
+
+		.w-33,
+		.w-66
+			width: 50%
+
+		.w-75
+			width: 75%
+
+
+@media (min-width: $grid-breackpoint-md)
+	footer
+		.w-33
+			width: 33.333%
+
+		.w-66
+			width: 66.666%
+
+

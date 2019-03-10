@@ -1,0 +1,402 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1em;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Verdana';
+}
+
+a img, :link img, :visited img {
+  border: 0;
+}
+
+@font-face {
+  font-family: 'Fords Folly';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/forsd-folly/fords-folly.eot");
+  src: url("../fonts/forsd-folly/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/forsd-folly/fords-folly.woff2") format("woff2"), url("../fonts/forsd-folly/fords-folly.woff") format("woff"), url("../fonts/forsd-folly/fords-folly.ttf") format("truetype"), url("../fonts/forsd-folly/fords-folly.svg#fordsfolly") format("svg");
+}
+
+@font-face {
+  font-family: 'Fords Folly';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/forsd-folly/fords-folly.eot");
+  src: url("../fonts/forsd-folly/fords-folly.eot?#iefix") format("embedded-opentype"), url("../fonts/forsd-folly/fords-folly.woff2") format("woff2"), url("../fonts/forsd-folly/fords-folly.woff") format("woff"), url("../fonts/forsd-folly/fords-folly.ttf") format("truetype"), url("../fonts/forsd-folly/fords-folly.svg#fords-folly") format("svg");
+}
+
+.font-fords-folly {
+  font-family: 'Fords Folly', Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Sansa Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sansa-pro/sansapro-semibold.eot");
+  src: url("../fonts/sansa-pro/sansapro-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro/sansapro-semibold.woff") format("woff"), url("../fonts/sansa-pro/sansapro-semibold.ttf") format("truetype"), url("../fonts/sansa-pro/sansapro-semibold.svg#sansapro-semibold") format("svg");
+}
+
+.font-sansa-pro {
+  font-family: 'Sansa Pro', Verdana, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Sansa Pro Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot");
+  src: url("../fonts/sansa-pro-bold/sansa-pro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sansa-pro-bold/sansa-pro-bold.woff") format("woff"), url("../fonts/sansa-pro-bold/sansa-pro-bold.ttf") format("truetype"), url("../fonts/sansa-pro-bold/sansa-pro-bold.svg#sansa-pro-bold") format("svg");
+}
+
+.font-sansa-pro-bold {
+  font-family: "Sansa Pro Bold", Verdana, Arial, sans-serif;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pacifico/pacifico.eot");
+  src: url("../fonts/pacifico/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("truetype"), url("../fonts/pacifico/pacifico.svg#pacifico") format("svg");
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pacifico/pacifico.eot");
+  src: url("../fonts/pacifico/pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/pacifico/pacifico.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("truetype"), url("../fonts/pacifico/pacifico.svg#pacifico") format("svg");
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', Verdana, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background: #fff url("../img/header-lines.png") repeat-x left bottom/220px;
+  height: 80px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.logoHeader {
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 125px);
+  width: 250px;
+}
+
+@media (min-width: 480px) {
+  .logoHeader {
+    left: 30px;
+  }
+}
+
+.sloganHeader {
+  color: #eb182c;
+  font-family: 'Fords Folly';
+  font-size: 1.5rem;
+  position: absolute;
+  top: 27px;
+  left: 290px;
+}
+
+@media (min-width: 1090px) {
+  .sloganHeader {
+    font-size: 1.7rem;
+  }
+}
+
+.listLogoHeader {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.listLogoHeader ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+}
+
+@media (min-width: 1090px) {
+  .listLogoHeader ul li {
+    width: 35px;
+  }
+}
+
+footer {
+  background: #faeb00;
+}
+
+footer:before {
+  background: url("../img/sunweb-wave.svg") no-repeat center/cover;
+  content: '';
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+footer .w-25,
+footer .w-33,
+footer .w-66,
+footer .w-75 {
+  display: inline-block;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+footer ul li {
+  color: #2d2d2d;
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+footer h3 {
+  color: #2d2d2d;
+  font-family: 'Sansa Pro Bold';
+  margin-bottom: 10px;
+}
+
+@media (min-width: 480px) {
+  footer .w-25 {
+    width: 25%;
+  }
+  footer .w-33,
+  footer .w-66 {
+    width: 50%;
+  }
+  footer .w-75 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 480px) {
+  footer .w-33 {
+    width: 33.333%;
+  }
+  footer .w-66 {
+    width: 66.666%;
+  }
+}
+
+body {
+  background: #ccc;
+}
+
+.container {
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.subcontainer {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 100%;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .subcontainer {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+  .subcontainer {
+    width: 900px;
+  }
+}
+
+.w-100 {
+  display: inline-block;
+  margin: 0 0 60px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-family: 'Sansa Pro Bold';
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+h2 {
+  color: #eb182c;
+  font-size: 1.25rem;
+  font-family: 'Sansa Pro Bold';
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn {
+  background: #eb182c;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Sansa Pro Bold';
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 9px 18px;
+}
+
+.btn:hover {
+  background: #bf1121;
+}
+
+.sliderHome {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.sliderHome:before {
+  background: url("../img/wave.svg") no-repeat center/140%;
+  bottom: -46px;
+  content: '';
+  display: block;
+  height: 105px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.sliderHome .sliderClaim {
+  background: #faeb00;
+  color: #2d2d2d;
+  font-size: 1.5rem;
+  font-family: 'Pacifico';
+  left: 0;
+  line-height: 1.3em;
+  padding: 10px 0 20px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .sliderHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sliderHome:before {
+    background-size: 170%;
+  }
+  .sliderHome .sliderClaim {
+    background: transparent;
+    font-size: 3.5rem;
+    left: 10%;
+    padding: 0;
+    text-align: left;
+    width: 420px;
+  }
+}
+
+@media (min-width: 960px) {
+  .sliderHome:before {
+    background-size: cover;
+  }
+  .sliderHome .sliderClaim {
+    font-size: 5rem;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 480px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 960px) {
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=stylesheets.css.map */
