@@ -5,56 +5,55 @@
 //-------------------------------------------------------------
 footer
 	background: #faeb00
+	margin-top: 150px
+	padding: 0 0 60px
+	position: relative
 
 	&:before
-		background: url('../img/sunweb-wave.svg') no-repeat center/cover
+		background: url('../img/sunweb-wave.svg') no-repeat center bottom/150%
 		content: ''
 		display: block
-		height: 50px
+		height: 100px
 		left: 0
 		position: absolute
-		top: 0
-		width: 100%
-
-	.w-25,
-	.w-33,
-	.w-66,
-	.w-75
-		display: inline-block
-		margin: 0 0 20px
+		top: -95px
 		width: 100%
 
 	ul li
-		color: #2d2d2d
+		color: #333
 		list-style: none
 		margin-bottom: 7px
 
 	h3
-		color: #2d2d2d
+		color: #333
 		font-family: 'Sansa Pro Bold'
 		margin-bottom: 10px
 
+.logoFooter
+	margin-top: -90px
 
+.sloganFooter
+	@extend .sloganHeaderText
+	margin-top: 0
+	text-align: center
+
+.list-inline
+	li
+		display: inline-block
+		margin: 0 5px 0 0
 
 @media (min-width: $grid-breackpoint-md)
 	footer
-		.w-25,
-			width: 25%
+		margin-top: 200px
+
+		&:before
+			background: url('../img/sunweb-wave.svg') no-repeat center bottom/150%
 
 		.w-33,
 		.w-66
-			width: 50%
+			ul,
+			h3
+				padding: 0 0 0 30px
 
-		.w-75
-			width: 75%
-
-
-@media (min-width: $grid-breackpoint-md)
-	footer
-		.w-33
-			width: 33.333%
-
-		.w-66
-			width: 66.666%
-
-
+	.sloganFooter
+		margin-top: -80px

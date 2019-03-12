@@ -17,6 +17,8 @@ body
 	margin: 0 auto
 	width: calc(100% - 40px)
 	max-width: 100%
+	position: relative
+	z-index: 1
 
 @media (min-width: $grid-breackpoint-md)
 	.container
@@ -39,85 +41,31 @@ body
 	text-align: center
 	width: 100%
 
-h1
-	font-size: 1.8rem
-	font-family: 'Sansa Pro Bold'
-	margin: 1.5em 0
-	text-align: center
-
-h2
-	color: $color-primary
-	font-size: 1.25rem
-	font-family: 'Sansa Pro Bold'
-	margin: 0 0 2em
-	text-align: center
-
-p
-	margin-bottom: 2rem
-	text-align: center
-
-.btn
-	background: $color-primary
-	border-radius: 5px
+.w-25,
+.w-33,
+.w-66,
+.w-75
 	display: inline-block
-	color: #fff
-	font-family: 'Sansa Pro Bold'
-	margin: 0 auto
-	text-decoration: none
-	text-transform: uppercase
-	padding: 9px 18px
-
-	&:hover
-		background: darken($color-primary, 10)
-
-.sliderHome
-	margin-bottom: 100px
-	position: relative
-
-	&:before
-		background: url('../img/wave.svg') no-repeat center/140%
-		bottom: -46px
-		content: ''
-		display: block
-		height: 105px
-		left: 0
-		position: absolute
-		width: 100%
-
-	.sliderClaim
-		background: #faeb00
-		color: #2d2d2d
-		font-size: 1.5rem
-		font-family: 'Pacifico'
-		left: 0
-		line-height: 1.3em
-		padding: 10px 0 20px
-		position: absolute
-		text-align: center
-		text-shadow: 0 0 15px rgba(255, 255, 255, 0.7)
-		width: 100%
+	margin: 0 0 20px
+	width: 100%
 
 @media (min-width: $grid-breackpoint-md)
-	.sliderHome
-		display: flex
-		align-items: center
-		justify-content: flex-start
+	.w-25,
+		width: 25%
 
-		&:before
-			background-size: 170%
+	.w-75
+		width: 75%
 
-		.sliderClaim
-			background: transparent
-			font-size: 3.5rem
-			left: 10%
-			padding: 0
-			text-align: left
-			width: 420px
+@media (min-width: 700px)
+	.w-md-50
+		width: 50%
+
+	.w-md-100
+		width: 100%
 
 @media (min-width: $grid-breackpoint-lg)
-	.sliderHome
-		&:before
-			background-size: cover
+	.w-33
+		width: 33.333%
 
-		.sliderClaim
-			font-size: 5rem
+	.w-66
+		width: 66.666%
